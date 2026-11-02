@@ -1,0 +1,20 @@
+# Composer
+/vendor/
+
+# Drupal Core (kommt per Composer)
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Hochgeladene Dateien und lokale Einstellungen
+/web/sites/*/files/
+/web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
+
+# Zugangsdaten
+.env
+
+# macOS und Editor
+.DS_Store
