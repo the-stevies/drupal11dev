@@ -1,0 +1,28 @@
+uuid: 8ad86c36-496c-435e-833a-cbfda6fdb263
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artikel.field_copy
+    - node.type.artikel
+  module:
+    - text
+    - user
+id: node.artikel.default
+targetEntityType: node
+bundle: artikel
+mode: default
+content:
+  field_copy:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

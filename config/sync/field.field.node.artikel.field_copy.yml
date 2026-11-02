@@ -1,0 +1,26 @@
+uuid: f6bc4538-1e3a-45ba-a443-5a13c5b3eca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copy
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.artikel
+  module:
+    - text
+id: node.artikel.field_copy
+field_name: field_copy
+entity_type: node
+bundle: artikel
+label: Copy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

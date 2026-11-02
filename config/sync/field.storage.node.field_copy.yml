@@ -1,0 +1,19 @@
+uuid: eae2f65c-1dcd-4825-90f8-ac886ee2925f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_copy
+field_name: field_copy
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
