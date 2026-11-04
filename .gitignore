@@ -13,6 +13,11 @@
 /web/sites/*/settings.local.php
 /web/sites/*/services.local.yml
 
+# Theming Sassfiles
+/web/themes/custom/moon/scss
+/web/themes/custom/moon/old_moon
+/web/themes/custom/moon/templates/vorD11
+
 # Zugangsdaten
 .env
 
@@ -21,3 +26,4 @@
 *.sql
 *.sql.gz
 .DS_Store
+web/sites/default/files/

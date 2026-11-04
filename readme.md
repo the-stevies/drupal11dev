@@ -8,7 +8,12 @@ TACwy33t#CjZqqv0UTiN
 
 
 
-
+cd ~/Sites/drupal11-dev
+ddev drush cex -y
+git status
+git add .
+git commit -m "Artikel"
+git push
 
 
 ddev drush cex -y
