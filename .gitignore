@@ -27,3 +27,4 @@
 *.sql.gz
 .DS_Store
 web/sites/default/files/
+web/.htpasswd
