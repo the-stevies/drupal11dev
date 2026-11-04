@@ -1,0 +1,31 @@
+uuid: 57b001e2-4678-4c99-8ef1-c3df0963f951
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.textblock
+    - field.field.block_content.textblock.body
+  module:
+    - text
+id: block_content.textblock.default
+targetEntityType: block_content
+bundle: textblock
+mode: default
+content:
+  body:
+    type: text_textarea
+    weight: -4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -18,6 +18,11 @@
 /web/themes/custom/moon/old_moon
 /web/themes/custom/moon/templates/vorD11
 
+web/.htpasswd
+
+drush/
+.ddev/php/
+
 # Zugangsdaten
 .env
 

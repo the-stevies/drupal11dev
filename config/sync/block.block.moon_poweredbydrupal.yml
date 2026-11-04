@@ -1,0 +1,20 @@
+uuid: 87fa240d-949e-4eb7-b5ec-c876022a0a7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - moon
+id: moon_poweredbydrupal
+theme: moon
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: aa9d81a2-3187-4cb4-a059-3dd1b49d93d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - moon
+id: moon_sitebranding
+theme: moon
+region: header
+weight: -2
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

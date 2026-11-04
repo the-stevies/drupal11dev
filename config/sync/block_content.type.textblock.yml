@@ -1,0 +1,8 @@
+uuid: 55c29862-b6a4-4187-b3d2-e46c9397da76
+langcode: en
+status: true
+dependencies: {  }
+id: textblock
+label: Textblock
+revision: false
+description: Textblock

@@ -1,0 +1,20 @@
+uuid: d693e7a6-b6b8-4fa9-9b70-23d720b3b5c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - moon
+id: moon_mainpagecontent
+theme: moon
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: visible
+  provider: system
+visibility: {  }
