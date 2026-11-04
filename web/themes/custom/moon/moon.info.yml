@@ -1,0 +1,20 @@
+name: moon
+type: theme
+base theme: stable9
+core_version_requirement: ^9 || ^10 || ^11
+description: A Drupal 11 Responsive Starter Theme
+libraries:
+    - moon/globalstyles
+    - moon/globaljs
+regions:
+  header: 'Header'
+  mobile_navigation: 'Mobile Navigation'
+  iconsnavi: 'Icons Navigation'
+  content: 'Main Content'
+  main_navigation: 'Main Navigation'
+  sidebar_first: 'Sidebar'
+  footer: 'Footer'
+  messages: 'Messages'
+
+
+logo: 'logo.svg'

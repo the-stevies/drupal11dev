@@ -1,0 +1,18 @@
+globalstyles:
+  version: 1.0
+
+  css:
+    theme:
+      css/moon.css: {}
+
+
+globaljs:
+
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
