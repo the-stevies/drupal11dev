@@ -292,6 +292,14 @@ body {
   padding: 170px 0px 0px 100px;
 }
 
+.pattern-two {
+  position: relative;
+  background-color: white;
+  z-index: 0;
+  min-height: 500px;
+  padding: 170px 0px 0px 100px;
+}
+
 footer {
   margin-left: 100px;
 }
