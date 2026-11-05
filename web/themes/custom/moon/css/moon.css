@@ -238,7 +238,7 @@ html {
 
 body {
   background-color: #E9E6E7;
-  padding: 0;
+  padding: 100px;
   margin: 0;
 }
 @media only screen and (max-width: 960px) {
@@ -248,11 +248,7 @@ body {
 }
 
 #block-moon-sitebranding {
-  margin-left: 5px;
   width: 200px;
-}
-#block-moon-sitebranding img {
-  margin: 25px 3px 25px 3px;
 }
 
 /*# sourceMappingURL=moon.css.map */
