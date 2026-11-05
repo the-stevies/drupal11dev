@@ -1,0 +1,31 @@
+uuid: 923cbb93-0a2d-46c5-bfbf-e6642d03bf9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.artikel.field_copy
+    - node.type.artikel
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.artikel.teaser
+targetEntityType: node
+bundle: artikel
+mode: teaser
+content:
+  field_copy:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true
