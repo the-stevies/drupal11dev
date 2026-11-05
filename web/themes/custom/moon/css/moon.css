@@ -238,7 +238,7 @@ html {
 
 body {
   background-color: #E9E6E7;
-  padding: 100px;
+  padding: 10px 100px;
   margin: 0;
 }
 @media only screen and (max-width: 960px) {
@@ -247,8 +247,28 @@ body {
   }
 }
 
+header {
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  padding: 10px;
+}
+
 #block-moon-sitebranding {
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+#block-moon-sitebranding img {
+  width: 80px;
+}
+
+#block-moon-mainnavigation ul {
+  display: flex;
+  list-style: none;
+  margin-top: 40px;
+}
+#block-moon-mainnavigation ul li {
+  padding: 0 15px 0;
 }
 
 /*# sourceMappingURL=moon.css.map */
