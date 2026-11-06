@@ -47,8 +47,8 @@
   src: url("../fonts/InriaSerif-Light.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 @font-face {
-  font-family: "InriaSerif";
-  src: url("../fonts/InriaSerif-Light.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-family: "Steffanson";
+  src: url("../fonts/Steffanson.woff") format("truetype"); /* Safari, Android, iOS */
 }
 html {
   margin: 0;
@@ -63,7 +63,7 @@ html {
      ========================= */
   --text: 1rem;
   --small: 0.875rem;
-  --h1: 2rem;
+  --h1: 2.5rem;
   --h2: 1.5rem;
   --h3: 1.25rem;
   --h4: 1.1rem;
@@ -247,6 +247,39 @@ body {
   }
 }
 
+.iconlist {
+  display: flex;
+  justify-content: left;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.pattern {
+  list-style-type: none;
+  max-width: 300px;
+}
+
+.pattern-icon-001 a:before {
+  content: "\f004";
+  font-family: "Steffanson" !important;
+  margin-right: 3px;
+  font-size: 110%;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+}
+
+.pattern-icon-002 a:before {
+  content: "\f00a";
+  font-family: "Steffanson" !important;
+  margin-right: 3px;
+  font-size: 110%;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+}
+
 header {
   border-radius: 12px;
   background-color: white;
@@ -284,7 +317,7 @@ body {
   margin: 180px 10px 0px 100px;
 }
 
-.pattern, .one {
+.pattern-one {
   position: relative;
   background-image: url("../images/apppattern.jpg");
   z-index: 0;
@@ -295,6 +328,14 @@ body {
 .pattern-two {
   position: relative;
   background-color: white;
+  z-index: 0;
+  min-height: 500px;
+  padding: 130px 0px 0px 100px;
+}
+
+.pattern-three {
+  position: relative;
+  background-color: #ccedf9;
   z-index: 0;
   min-height: 500px;
   padding: 170px 0px 0px 100px;
