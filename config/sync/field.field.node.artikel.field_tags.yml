@@ -1,0 +1,29 @@
+uuid: 0d9e34a1-a7e8-4047-a4bc-f8b6a81d1c60
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.artikel
+    - taxonomy.vocabulary.tags
+id: node.artikel.field_tags
+field_name: field_tags
+entity_type: node
+bundle: artikel
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

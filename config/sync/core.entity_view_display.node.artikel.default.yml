@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.artikel.field_copy
+    - field.field.node.artikel.field_tags
     - node.type.artikel
   module:
     - text
@@ -19,6 +20,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

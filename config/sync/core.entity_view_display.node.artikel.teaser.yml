@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.artikel.field_copy
+    - field.field.node.artikel.field_tags
     - node.type.artikel
   module:
     - layout_builder
@@ -27,5 +28,6 @@ content:
     weight: 0
     region: content
 hidden:
+  field_tags: true
   langcode: true
   links: true

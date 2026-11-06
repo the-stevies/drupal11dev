@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - taxonomy.vocabulary.tags
   module:
     - file
     - filter
     - system
+    - taxonomy
 _core:
   default_config_hash: wkW7P5A53YhGmsgamrmTbfwpZrqdnPYiJdoAZQtdmJg
 id: authenticated
@@ -16,5 +18,6 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
+  - 'create terms in tags'
   - 'delete own files'
   - 'use text format basic_html'
