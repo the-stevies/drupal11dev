@@ -1,5 +1,5 @@
 uuid: ebe72af5-1c05-4062-8ff0-332dea51fcf7
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -38,7 +38,7 @@ settings:
     ckeditor5_codeBlock:
       languages:
         -
-          label: 'Plain text'
+          label: Klartext
           language: plaintext
         -
           label: C

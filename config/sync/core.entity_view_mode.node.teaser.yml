@@ -1,5 +1,5 @@
 uuid: e66c3ac7-b7c8-45bc-b10a-19389d3bac74
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: KgGJDZFpMaz_8bTv6fN1bXS3Qi5LWmRJI9R53kEGsNQ
 id: node.teaser
-label: Teaser
+label: Anrisstext
 description: ''
 targetEntityType: node
 cache: true

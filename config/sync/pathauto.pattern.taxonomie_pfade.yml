@@ -1,0 +1,33 @@
+uuid: f911355b-254f-4872-b4bb-1caa11c561a3
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - language
+    - taxonomy
+id: taxonomie_pfade
+label: 'Taxonomie Pfade'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/genre/[term:name]'
+selection_criteria:
+  7f09089c-2ca1-4b9d-a50b-de9652fcaca7:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags: tags
+  d1ac4421-0b12-4e7b-aba3-31d1d3ccd03c:
+    id: language
+    negate: false
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      de: de
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Sprache

@@ -1,5 +1,5 @@
 uuid: 2603b245-043d-4efa-80d1-8c88863467cc
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: 1TFiplNN7Wmj_DtVLLLP-NLPYpZJdAswKY-vTrYgFyo
 id: user.register
-label: Register
+label: Registrieren
 description: null
 targetEntityType: user
 cache: true

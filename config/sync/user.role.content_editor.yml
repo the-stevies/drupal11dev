@@ -1,5 +1,5 @@
 uuid: 96910b2c-25fb-42ec-b377-a3f6d1bc4859
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ dependencies:
 _core:
   default_config_hash: og55Zu0F-q-X8zG0Ohrls49zws6IrmmosZS-30Es8vw
 id: content_editor
-label: 'Content editor'
+label: Redakteur
 weight: 2
 is_admin: false
 permissions:
