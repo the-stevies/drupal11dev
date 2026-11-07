@@ -9,7 +9,7 @@ dependencies:
 id: genre
 label: Genre
 type: 'canonical_entities:node'
-pattern: '/genre/[node:field_tags]'
+pattern: '/artikel/[node:title]'
 selection_criteria:
   dc4dc8d3-9c19-40bc-a277-db27b9802c75:
     id: 'entity_bundle:node'
