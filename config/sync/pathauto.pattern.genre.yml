@@ -1,0 +1,33 @@
+uuid: 99ba9095-9183-446f-9617-8b980c93af4d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.artikel
+  module:
+    - language
+    - node
+id: genre
+label: Genre
+type: 'canonical_entities:node'
+pattern: '/genre/[node:field_tags]'
+selection_criteria:
+  dc4dc8d3-9c19-40bc-a277-db27b9802c75:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      artikel: artikel
+  3b9932ea-0678-4c4b-af53-d2bdef04fc05:
+    id: language
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      de: de
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Sprache
