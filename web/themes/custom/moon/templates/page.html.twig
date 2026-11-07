@@ -1,6 +1,6 @@
 <div class="layout-container">
 
-  <header role="banner">
+  <header role="banner" class="topheader">
     {{ page.header }}
     {{ page.primary_menu }}
   </header>
@@ -22,7 +22,9 @@
   </main>
 
   <footer role="contentinfo">
-    {{ page.footer }}
+    <div class="footer-inner">
+      {{ page.footer }}
+    </div>
   </footer>
 
 </div>
