@@ -5,6 +5,7 @@ use Drupal\Core\Template\RenderWrapper;
 use Drupal\Core\Template\Attribute;
 use Drupal\Core\Theme\ThemeSettings;
 use Drupal\Component\Utility\Html;
+use Drupal\user\UserInterface;
 
 
 
@@ -49,4 +50,15 @@ function moon_preprocess_page(&$vars) {
 function moon_preprocess_node(&$variables) {
   $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
   $variables['language'] = $language;
+}
+
+function moon_preprocess_user(array &$variables): void {
+  /** @var \Drupal\user\UserInterface $account */
+  $account = $variables['elements']['#user'];
+
+  $variables['is_own_profile'] = (int) \Drupal::currentUser()->id() === (int) $account->id();
+  $variables['last_login'] = $account->getLastLoginTime() ?: NULL;
+
+  // Ausgabe hängt vom angemeldeten Nutzer ab.
+  $variables['#cache']['contexts'][] = 'user';
 }

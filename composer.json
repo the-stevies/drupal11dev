@@ -23,6 +23,7 @@
         "drupal/pathauto": "^1.15",
         "drupal/redirect": "^1.13",
         "drupal/token": "^1.18",
+        "drupal/twig_tweak": "^3.4",
         "drush/drush": "^13.8"
     },
     "conflict": {
