@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Meine Inhalte'
+      title: Dashboard
       fields:
         title:
           id: title
@@ -387,6 +387,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_description: 'User Page'
     cache_metadata:
       max-age: -1
       contexts:

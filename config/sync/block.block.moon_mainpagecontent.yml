@@ -14,7 +14,7 @@ provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: '[current-page:title]'
   label_display: visible
   provider: system
 visibility: {  }

@@ -14,24 +14,21 @@
  * - user: A Drupal User entity.
  *
  * @see \Drupal\user\UserThemeHooks::preprocessUser()
+ * user.user_picture|view('thumbnail')
  *
  * @ingroup themeable
  */
 #}
+
 <article{{ attributes }}>
+  {% if content %}
+    {{- content -}}
 
-
-{% if is_own_profile %}
-    <nav class="dashboard__actions" aria-label="{{ 'Schnellaktionen'|t }}">
-      <a href="{{ path('node.add', {'node_type': 'artikel'}) }}">{{ 'Neuer Artikel'|t }}</a>
-      <a href="{{ path('entity.user.edit_form', {'user': user.id}) }}">{{ 'Profil bearbeiten'|t }}</a>
-      <a href="{{ path('user.logout') }}">{{ 'Abmelden'|t }}</a>
-    </nav>
-
-    <div class="dashboard__mycontent">
-      {{ drupal_view('meine_benutzerseite', 'block_1') }}
-    </div>
+    {{ drupal_view('meine_benutzerseite', 'block_1') }}
   {% endif %}
+
+
+
 
 
 </article>
