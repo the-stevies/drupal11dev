@@ -6,6 +6,7 @@ use Drupal\Core\Template\Attribute;
 use Drupal\Core\Theme\ThemeSettings;
 use Drupal\Component\Utility\Html;
 use Drupal\user\UserInterface;
+use Drupal\node\NodeInterface;
 
 
 
@@ -30,6 +31,32 @@ function moon_preprocess_html(&$variables) {
   if (count($path_args) >= 3) {
     $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
   }
+  
+
+  $route_match = \Drupal::routeMatch();
+    $route_name = $route_match->getRouteName();
+
+    // 1. Routenname: route-entity-node-canonical, route-user-login, ...
+    if ($route_name) {
+      $variables['attributes']['class'][] = 'route-' . str_replace(['.', '_'], '-', $route_name);
+    }
+
+    // 2. Node-ID und Inhaltstyp.
+    $node = $route_match->getParameter('node');
+    if ($node instanceof NodeInterface) {
+      $variables['attributes']['class'][] = 'node-id-' . $node->id();
+      $variables['attributes']['class'][] = 'node-type-' . $node->bundle();
+    }
+
+    // 3. Alias-Pfad als Klasse: /ueber-mich -> path-ueber-mich
+    $alias = trim(\Drupal::service('path.current')->getPath(), '/');
+    $alias = \Drupal::service('path_alias.manager')->getAliasByPath('/' . $alias);
+    $slug = trim(preg_replace('/[^a-z0-9]+/', '-', strtolower($alias)), '-');
+    $variables['attributes']['class'][] = $slug ? 'path-' . $slug : 'path-front';
+
+    // Cache-Kontexte, sonst gelten die Klassen der ersten gecachten Seite überall.
+    $variables['#cache']['contexts'][] = 'route';
+    $variables['#cache']['contexts'][] = 'url.path';
 }
 
 /**

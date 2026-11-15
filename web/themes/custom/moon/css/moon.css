@@ -250,22 +250,26 @@ body {
 }
 
 .footer-inner {
-  margin-left: 100px;
-  margin-top: 100px;
+  margin-left: 105px;
+  margin-top: 105px;
 }
 
 .dashboard {
-  position: relative;
-  display: block;
+  display: flex;
   position: relative;
   width: 100%;
   margin-bottom: 30px;
   margin-left: 250px;
   margin-top: 100px;
+  flex-direction: column;
 }
 
 .views-field.views-field-title {
   width: 200px;
+}
+
+.route-entity-user-canonical h1 {
+  display: none;
 }
 
 .iconlist {
@@ -309,32 +313,24 @@ body {
   border: solid 1px #666;
 }
 
-.topheader {
-  border-radius: 12px;
-  background-color: white;
-  display: flex;
-  padding: 10px;
-  position: absolute;
-  z-index: 70;
-  width: 90%;
-  top: 20px;
-  left: 90px;
-}
-
-#block-moon-sitebranding {
+#block-moon-site-branding {
   display: flex;
   flex-direction: column;
 }
-#block-moon-sitebranding img {
-  width: 80px;
+#block-moon-site-branding img {
+  width: 65px;
+  height: 65px;
+  color: #3498db;
 }
 
-#block-moon-mainnavigation ul {
+#block-moon-main-menu ul {
   display: flex;
   list-style: none;
-  margin-top: 40px;
+  margin-top: 19px;
+  margin-left: 0px;
+  padding: 0;
 }
-#block-moon-mainnavigation ul li {
+#block-moon-main-menu ul li {
   padding: 0 15px 0;
 }
 
@@ -342,16 +338,48 @@ body {
   padding: 0;
 }
 
-#block-moon-mainpagecontent {
-  margin: 180px 10px 0px 100px;
+.topheader {
+  border-radius: 40px;
+  background-color: white;
+  display: flex;
+  padding: 9px 10px 2px;
+  position: fixed;
+  z-index: 70;
+  max-width: 90vw;
+  top: 20px;
+  left: 90px;
+  flex-direction: row;
+  align-self: center;
+}
+
+.layout-content {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90vw;
 }
 
 .pattern-one {
   position: relative;
-  background-image: url("../images/apppattern.jpg");
+  background-image: url("../images/apppattern-2.webp");
   z-index: 0;
   min-height: 500px;
-  padding: 170px 0px 0px 100px;
+  padding: 170px 0 0 100px;
+  color: white;
+}
+@media only screen and (max-width: 1300px) {
+  .pattern-one {
+    padding: 140px 20px 0 40px;
+  }
+}
+.pattern-one .pattern-inner {
+  display: inline-block;
+  min-width: 600px;
+}
+@media only screen and (max-width: 1300px) {
+  .pattern-one .pattern-inner {
+    min-width: 0px;
+  }
 }
 
 .pattern-two {
@@ -359,7 +387,7 @@ body {
   background-color: white;
   z-index: 0;
   min-height: 500px;
-  padding: 130px 0px 0px 100px;
+  padding: 130px 0 0 100px;
 }
 
 .pattern-three {
@@ -367,7 +395,180 @@ body {
   background-color: #ccedf9;
   z-index: 0;
   min-height: 500px;
-  padding: 170px 0px 0px 100px;
+  padding: 170px 0 0 100px;
 }
+
+/* ==========================================================
+   Drupal Login – neutral
+   ========================================================== */
+/* Seitentitel */
+body.route-user-login .page-title,
+body.route-user-login h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Footer */
+body.route-user-login #block-moon-powered {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* Form */
+.user-login-form {
+  --login-bg: #ffffff;
+  --login-border: #dcdcdc;
+  --login-text: #2b2b2b;
+  --login-muted: #6b6b6b;
+  --login-field-bg: #fafafa;
+  --login-accent: #333333;
+  /* Button */
+  --login-accent-hv: #1a1a1a;
+  /* Button Hover */
+  --login-focus: #8a8a8a;
+  /* Fokus-Ring */
+  --login-radius: 6px;
+  max-width: 380px;
+  margin: 3rem auto;
+  padding: 2.25rem 2rem 2rem;
+  background: var(--login-bg);
+  border: 1px solid var(--login-border);
+  border-radius: calc(var(--login-radius) + 4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  color: var(--login-text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.user-login-form *,
+.user-login-form *::after,
+.user-login-form *::before {
+  box-sizing: border-box;
+}
+
+/* Feldgruppen */
+.user-login-form .form-item {
+  margin: 0 0 1.25rem;
+}
+
+/* Labels */
+.user-login-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--login-muted);
+}
+
+/* Pflichtfeld-Stern dezent */
+.user-login-form label.form-required::after {
+  content: " *";
+  color: var(--login-muted);
+  background: none;
+}
+
+/* Eingabefelder */
+.user-login-form input.form-text {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.7rem 0.85rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--login-text);
+  background: var(--login-field-bg);
+  border: 1px solid var(--login-border);
+  border-radius: var(--login-radius);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.user-login-form input.form-text:hover {
+  border-color: #c2c2c2;
+}
+
+.user-login-form input.form-text:focus {
+  outline: none;
+  background: #fff;
+  border-color: var(--login-focus);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Fehlerzustand (Drupal setzt .error) */
+.user-login-form input.form-text.error {
+  border-color: #b3261e;
+  box-shadow: 0 0 0 3px rgba(179, 38, 30, 0.1);
+}
+
+/* Button */
+.user-login-form .form-actions {
+  margin: 1.75rem 0 0;
+}
+
+.user-login-form input.form-submit {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: var(--login-accent);
+  border: 1px solid var(--login-accent);
+  border-radius: var(--login-radius);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.05s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.user-login-form input.form-submit:hover {
+  background: var(--login-accent-hv);
+  border-color: var(--login-accent-hv);
+}
+
+.user-login-form input.form-submit:active {
+  transform: translateY(1px);
+}
+
+.user-login-form input.form-submit:focus-visible {
+  outline: 2px solid var(--login-focus);
+  outline-offset: 2px;
+}
+
+/* Kleine Displays */
+@media (max-width: 480px) {
+  .user-login-form {
+    margin: 1.5rem 1rem;
+    padding: 1.75rem 1.25rem;
+  }
+}
+/* Optional: automatischer Dark Mode
+@media (prefers-color-scheme: dark) {
+  .user-login-form {
+    --login-bg:       #1e1e1e;
+    --login-border:   #3a3a3a;
+    --login-text:     #eaeaea;
+    --login-muted:    #a0a0a0;
+    --login-field-bg: #262626;
+    --login-accent:   #e6e6e6;
+    --login-accent-hv:#ffffff;
+    --login-focus:    #8a8a8a;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+  .user-login-form input.form-submit { color: #111; }
+  .user-login-form input.form-text:focus { background: #2c2c2c; }
+}
+*/
 
 /*# sourceMappingURL=moon.css.map */

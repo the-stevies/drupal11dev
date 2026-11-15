@@ -10,6 +10,7 @@ globaljs:
 
   js:
     js/script.js: {}
+    js/gsap.min.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax

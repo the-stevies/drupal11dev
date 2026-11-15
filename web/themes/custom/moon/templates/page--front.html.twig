@@ -2,7 +2,8 @@
 
   <header role="banner" class="topheader">
     {{ page.header }}
-    {{ page.primary_menu }}
+    {{ page.main_navigation }}
+    {{ page.mobile_navigation }}
   </header>
 
   {{ page.breadcrumb }}
@@ -15,12 +16,13 @@
     {{ page.highlighted }}
     {{ page.help }}
 
-    <div class="layout-content">
+    <div class="layout-content-front">
         <div class="pattern-one">
           <div class="pattern-inner">
             <h1>See Drupal in Action Across Industries</h1>
             <p>
             From Fortune 500 enterprises to innovative startups, organizations across every industry choose Drupal <br>for digital experiences that scale. Explore industry-specific pages showcasing real projects, proven results, <br>and the exact challenges Drupal solves in your sector.</p>
+            <img src="{{ directory }}/images/marethree.png" alt="" width="300px">
           </div>
         </div>
         <div class="pattern-two">
@@ -33,7 +35,7 @@
                   Create compelling content across more devices than ever with tools that build versatile, structured content and integrate seamlessly with a wide range of digital marketing channels.</p>
                 </li>
                 <li class="pattern pattern-icon-002"><h1><a href="#">Solar System</a></h1>
-                <p>With no vendor lock-in and low-code/no-code options available, marketers can independently drive your digital strategy and publishing workflows.</p></li>
+                <p>With no vendor lock-in and low-code/no-code options available, marketers can independently drive your digital strategy and publishing workflows!</p></li>
               </ul>
 
             </p>

@@ -15,6 +15,7 @@
  *
  * @see \Drupal\user\UserThemeHooks::preprocessUser()
  * user.user_picture|view('thumbnail')
+ * drupal_view('meine_benutzerseite', 'block_1')
  *
  * @ingroup themeable
  */
@@ -25,7 +26,7 @@
 <section{{ attributes.addClass(classes) }}>
 
 <header class="dashboard__header">
-    <h1>{{ 'Hallo, @name'|t({'@name': user.displayname}) }}</h1>
+    <h2>{{ 'Hallo, @name'|t({'@name': user.displayname}) }}</h2>
     {% if last_login %}
       <p class="dashboard__login">{{ 'Letzter Login'|t }}: {{ last_login|date('d.m.Y, H:i') }}</p>
     {% endif %}
@@ -35,7 +36,7 @@
   {% if content %}
     {{- content -}}
 
-    {{ drupal_view('meine_benutzerseite', 'block_1') }}
+
   {% endif %}
 
   {% if is_own_profile %}

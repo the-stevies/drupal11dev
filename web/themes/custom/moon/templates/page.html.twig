@@ -2,23 +2,20 @@
 
   <header role="banner" class="topheader">
     {{ page.header }}
-    {{ page.primary_menu }}
+    {{ page.main_navigation }}
+    {{ page.mobile_navigation }}
   </header>
-
-  {{ page.breadcrumb }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>
 
-    {{ page.highlighted }}
-    {{ page.help }}
+    {{ page.messages }}
 
     <div class="layout-content">
       {{ page.content }}
     </div>
 
     {{ page.sidebar_first }}
-    {{ page.sidebar_second }}
   </main>
 
   <footer role="contentinfo">
