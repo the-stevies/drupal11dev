@@ -20,15 +20,31 @@
  */
 #}
 
-<article{{ attributes }}>
+{% set classes = ['dashboard'] %}
+
+<section{{ attributes.addClass(classes) }}>
+
+<header class="dashboard__header">
+    <h1>{{ 'Hallo, @name'|t({'@name': user.displayname}) }}</h1>
+    {% if last_login %}
+      <p class="dashboard__login">{{ 'Letzter Login'|t }}: {{ last_login|date('d.m.Y, H:i') }}</p>
+    {% endif %}
+  </header>
+
+
   {% if content %}
     {{- content -}}
 
     {{ drupal_view('meine_benutzerseite', 'block_1') }}
   {% endif %}
 
+  {% if is_own_profile %}
+      <nav class="dashboard__actions" aria-label="{{ 'Schnellaktionen'|t }}">
+        <a href="{{ path('node.add', {'node_type': 'artikel'}) }}">{{ 'Neuer Artikel'|t }}</a>
+        <a href="{{ path('entity.user.edit_form', {'user': user.id}) }}">{{ 'Profil bearbeiten'|t }}</a>
+        <a href="{{ path('user.logout') }}">{{ 'Abmelden'|t }}</a>
+      </nav>
+    {% endif %}
 
 
-
-
-</article>
+</section>
