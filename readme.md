@@ -41,8 +41,9 @@ git clone git@github.com:the-stevies/drupal11dev.git drupal11dev && cd drupal11d
 composer install --no-dev --optimize-autoloader
 
 
+git clone https://github.com/the-stevies/drupal11dev.git eleven.stefan-guenther.net
 
-
+git clone https://github.com/the-stevies/drupal11dev.git drupal-eleven
 
 
 
