@@ -18,6 +18,10 @@ settings:
   label_display: '0'
   provider: system
   use_site_logo: true
-  use_site_name: true
-  use_site_slogan: true
-visibility: {  }
+  use_site_name: false
+  use_site_slogan: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/user/\r\n/user/*\r\n/de/user/\r\n/de/user/*"

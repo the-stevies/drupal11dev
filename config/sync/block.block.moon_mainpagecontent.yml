@@ -17,4 +17,8 @@ settings:
   label: '[current-page:title]'
   label_display: visible
   provider: system
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/user/1\r\n/user/1*\r\n/user/1/*"
