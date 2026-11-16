@@ -1,0 +1,5 @@
+AuthUserFile /www/htdocs/w00ed79b/drupal-eleven/web/.htpasswd
+AuthGroupFile /dev/null
+AuthName 'ByPassword'
+AuthType Basic
+require valid-user
