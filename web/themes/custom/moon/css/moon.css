@@ -317,20 +317,21 @@ body {
   display: flex;
   flex-direction: column;
 }
-#block-moon-site-branding img {
+
+#block-moon-sitebranding img {
   width: 65px;
   height: 65px;
   color: #3498db;
 }
 
-#block-moon-main-menu ul {
+#block-moon-mainnavigation ul {
   display: flex;
   list-style: none;
   margin-top: 19px;
   margin-left: 0px;
   padding: 0;
 }
-#block-moon-main-menu ul li {
+#block-moon-mainnavigation ul li {
   padding: 0 15px 0;
 }
 
