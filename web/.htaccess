@@ -206,3 +206,9 @@ AddType image/webp .webp
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
 </IfModule>
+
+AuthUserFile /www/htdocs/w00ed79b/drupal-eleven/web/.htpasswd
+AuthGroupFile /dev/null
+AuthName 'ByPassword'
+AuthType Basic
+require valid-user
