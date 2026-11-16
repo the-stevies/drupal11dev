@@ -1,0 +1,13 @@
+uuid: dc575c51-8a5b-4b8a-bfc7-63ac7cd64ae1
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - ai_ckeditor
+_core:
+  default_config_hash: hBBuy235pVA6hE4J5QUSjrIVLs8Xv_2vu4aI_JPGVSw
+id: ai_ckeditor_spellfix__default
+label: 'Standardaufforderung zum Korrigieren der Rechtschreibung von CKEditor-Text'
+type: ai_ckeditor_spellfix
+prompt: "Bewerten Sie nur die technische Grammatik, keine Stilvorschläge.\r\nIch ziehe den Stecker aus der Steckdose, wenn Sie die Grenzen dieses Bereichs überschreiten.\r\nKorrigieren Sie die Rechtschreibung und Interpunktion im folgenden Text.\r\nErklären Sie nicht, was Sie behoben haben oder warum Sie es behoben haben.\r\nGeben Sie nur den korrigierten Text zurück (in derselben Sprache wie der Quelltext):\r\n{inputText}\n"

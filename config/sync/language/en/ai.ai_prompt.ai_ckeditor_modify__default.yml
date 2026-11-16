@@ -1,0 +1,6 @@
+label: 'Default prompt for modifying CKEditor text'
+prompt: |
+  Use the following instructions to process this text. Return only the processed text without explanations.
+  Instructions: {modifyPrompt}
+  Text to process:
+  {inputText}

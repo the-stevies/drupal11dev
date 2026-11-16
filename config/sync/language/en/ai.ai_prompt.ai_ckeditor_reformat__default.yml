@@ -1,0 +1,4 @@
+label: 'Default prompt for reformatting CKEditor text'
+prompt: |
+  Please fix this text to be marked up with semantic HTML using only lists, headers, or paragraph tags:
+  {inputText}

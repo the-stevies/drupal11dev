@@ -21,9 +21,10 @@ bundle: artikel
 mode: teaser
 content:
   field_copy:
-    type: text_default
+    type: text_trimmed
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 200
     third_party_settings: {  }
     weight: 0
     region: content

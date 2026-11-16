@@ -1,0 +1,8 @@
+label: 'Default prompt for changing the tone of CKEditor text'
+prompt: |
+  Change the tone of the following text to be {tone} using the same language as the following text.
+  {% if use_description %}
+    That tone can described as: {toneDescription}
+  {% endif %}
+  The text that we want to change is the following:
+  {inputText}

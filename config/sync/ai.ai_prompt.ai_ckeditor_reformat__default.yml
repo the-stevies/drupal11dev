@@ -1,0 +1,15 @@
+uuid: 726ca82a-a0c9-461c-81aa-4dcc203a7c5e
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - ai_ckeditor
+_core:
+  default_config_hash: szKJp7jVTmKQGtoZs8-qqkkMLA3Y9VQzJPTHWKfPwc8
+id: ai_ckeditor_reformat__default
+label: 'Standardaufforderung zum Neuformatieren von CKEditor-Text'
+type: ai_ckeditor_reformat
+prompt: |
+  Please fix this text to be marked up with semantic HTML using only lists, headers, or paragraph tags:
+  {inputText}

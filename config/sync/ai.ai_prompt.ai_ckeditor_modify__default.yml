@@ -1,0 +1,13 @@
+uuid: e284c672-9dd7-40a6-9fd6-5053056d3d12
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - ai_ckeditor
+_core:
+  default_config_hash: 8uQOHwgWqBD9Www3xTNSxxXuZvZMwLphuoR-rwBTak4
+id: ai_ckeditor_modify__default
+label: 'Standardaufforderung zum Ändern des CKEditor-Textes'
+type: ai_ckeditor_modify
+prompt: "Befolgen Sie die folgenden Anweisungen, um diesen Text zu verarbeiten. Geben Sie nur den verarbeiteten Text ohne Erläuterungen zurück.\r\nAnleitung: {modifyPrompt}\r\nZu verarbeitender Text:\r\n{inputText}\n"

@@ -1,0 +1,13 @@
+uuid: 9f4228f0-54e0-48e8-9dea-2ec636ed28a9
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - ai_ckeditor
+_core:
+  default_config_hash: T-iy6jtCQXaCSoWd6xaNyUDvZ9ZAFFtyqo40DYqYQ9A
+id: ai_ckeditor_summarize__default
+label: 'Standardaufforderung zum Zusammenfassen von CKEditor-Text'
+type: ai_ckeditor_summarize
+prompt: "Fassen Sie den folgenden Text in derselben Sprache zusammen:\r\nGeben Sie den Originaltext nicht zurück oder wiederholen Sie ihn Wort für Wort.\r\nHier ist der Originaltext:\r\n{inputText}\n"

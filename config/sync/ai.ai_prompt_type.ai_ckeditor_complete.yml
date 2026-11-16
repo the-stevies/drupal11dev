@@ -1,0 +1,13 @@
+uuid: 65f4ebf9-9e80-406d-8b00-0e79fcb0d8f8
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - ai_ckeditor
+_core:
+  default_config_hash: 0KwDGQRMyNT7AeR-GFe8Kk50kkj-AB4o-VRI8IhgVL0
+id: ai_ckeditor_complete
+label: 'KI CKEditor-Abschlussaufforderung'
+variables: {  }
+tokens: {  }

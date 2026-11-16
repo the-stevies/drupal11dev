@@ -20,6 +20,8 @@
 
 web/.htpasswd
 
+node_modules/
+
 drush/
 .ddev/php/
 

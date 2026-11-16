@@ -1,0 +1,13 @@
+uuid: 5eacc88c-28b9-4e4b-a043-4cf6177e3edb
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - ai_ckeditor
+_core:
+  default_config_hash: GyS5GvpfRJUXyVk56ob1pJz58l14YCZeRiyyyO0-1iM
+id: ai_ckeditor_translate__default
+label: 'Standardaufforderung zum Übersetzen von CKEditor-Text'
+type: ai_ckeditor_translate
+prompt: "Antworten Sie nicht, antworten Sie nur mit dem übersetzten Text, keine Höflichkeiten.\r\nÜbersetzen Sie den folgenden Text in {lang}\r\n{% if use_description %}\r\n  Übersetzungskontext: {context}\r\n{% endif %}\r\nDer Text, den wir übersetzen möchten, ist der folgende:\r\n{inputText}\n"

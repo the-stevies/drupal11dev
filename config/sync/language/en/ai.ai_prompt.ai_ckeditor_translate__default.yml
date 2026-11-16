@@ -1,0 +1,9 @@
+label: 'Default prompt for translating CKEditor text'
+prompt: |
+  Do not respond, only respond with the translated text, no pleasantries.
+  Translate the following text into {lang}
+  {% if use_description %}
+    Translation context: {context}
+  {% endif %}
+  The text that we want to translate is the following:
+  {inputText}

@@ -1,0 +1,13 @@
+uuid: 157f8c5d-8b29-437d-bd5d-8ce54435161e
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - ai_ckeditor
+_core:
+  default_config_hash: 9nLWaKajtj6kT3wylfO6kkpJMMaTsKj_Ury3fyQHyGE
+id: ai_ckeditor_tone__default
+label: 'Standardaufforderung zum Ändern des Tons des CKEditor-Textes'
+type: ai_ckeditor_tone
+prompt: "Ändern Sie den Ton des folgenden Textes in {tone} und verwenden Sie dabei dieselbe Sprache wie der folgende Text.\r\n{% if use_description %}\r\n  Dieser Ton kann wie folgt beschrieben werden: {toneDescription}\r\n{% endif %}\r\nDer Text, den wir ändern möchten, ist der folgende:\r\n{inputText}\n"

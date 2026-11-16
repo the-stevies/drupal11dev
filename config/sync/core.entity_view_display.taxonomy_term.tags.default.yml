@@ -1,0 +1,23 @@
+uuid: b11920ad-449e-4d8e-89a1-21f3f874d788
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - text
+id: taxonomy_term.tags.default
+targetEntityType: taxonomy_term
+bundle: tags
+mode: default
+content:
+  description:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
